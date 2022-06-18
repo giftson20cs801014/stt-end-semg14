@@ -1,0 +1,93 @@
+{
+	"info": {
+		"_postman_id": "47e9ac7e-2603-40bc-84da-f6ab8f1737cc",
+		"name": "jobContollerSwagger",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getAllJobDesc",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9190/normal/webapi/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9190",
+					"path": [
+						"normal",
+						"webapi",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateJobDesc(Post)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"jobId\": 3,\r\n  \"jobTitle\": \"20CS801014 SOFTWARE Developer-Asp.Net\",\r\n  \"jobDescription\": \"Giftson Daniel GMust know .Net Technologies\",\r\n  \"project\": [\r\n    {\r\n      \"projectName\": \"Car Rental\",\r\n      \"technology\": [\r\n        \"ASPC#\"\r\n      ]\r\n    }\r\n  ],\"experience\": [\r\n    \"Exp.With Asp projects is nice to have\",\r\n    \"Deployment of Asp projects\"\r\n  ]\r\n}\r\n"
+				},
+				"url": {
+					"raw": "http://localhost:9190/normal/webapi/add/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9190",
+					"path": [
+						"normal",
+						"webapi",
+						"add",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "find-a-jobdesciption",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9190/normal/webapi/find?id=3&jobTitle=20CS801014 SOFTWARE Developer-Asp.Net",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9190",
+					"path": [
+						"normal",
+						"webapi",
+						"find"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "3"
+						},
+						{
+							"key": "jobTitle",
+							"value": "20CS801014 SOFTWARE Developer-Asp.Net"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
