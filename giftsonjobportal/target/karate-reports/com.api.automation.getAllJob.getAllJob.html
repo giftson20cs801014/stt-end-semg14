@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <title>com.api.automation.getAllJob.getAllJob</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">1</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2022-06-18 11:11:52 AM</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:4]"><span>[1:4]</span> <span>XX_TC_Num:To get all the job description from the job portal application</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">com/api/automation/getAllJob/getAllJob.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Get all the Job Description</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:4]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:4]</span>
+                <span class="scenario-name">XX_TC_Num:To get all the job description from the job portal application</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>7843</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:4]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:4]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.3">
+      <div class="step-ref bg-step">3</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;http://localhost:9190&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">623</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref passed">5</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/normal/webapi/all&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref passed">6</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">6827</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.6">11:11:47.032 request:
+1 &gt; GET http://localhost:9190/normal/webapi/all
+1 &gt; Host: localhost:9190
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+11:11:51.824 response time in milliseconds: 4736
+1 &lt; 200
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Sat, 18 Jun 2022 05:41:51 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Connection: keep-alive
+[{&quot;jobId&quot;:1,&quot;jobTitle&quot;:&quot;Software Engg&quot;,&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;],&quot;project&quot;:[{&quot;projectName&quot;:&quot;Movie App&quot;,&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;]}]},{&quot;jobId&quot;:2,&quot;jobTitle&quot;:&quot;Web Developer-Asp.Net&quot;,&quot;jobDescription&quot;:&quot;Giftson Daniel GMust know .Net Technologies&quot;,&quot;experience&quot;:[&quot;Exp.With Asp projects is nice to have&quot;,&quot;Deployment of Asp projects&quot;],&quot;project&quot;:[{&quot;projectName&quot;:&quot;Car Rental&quot;,&quot;technology&quot;:[&quot;ASPC#&quot;]}]},{&quot;jobId&quot;:3,&quot;jobTitle&quot;:&quot;20CS801014 SOFTWARE Developer-Asp.Net&quot;,&quot;jobDescription&quot;:&quot;Giftson Daniel GMust know .Net Technologies&quot;,&quot;experience&quot;:[&quot;Exp.With Asp projects is nice to have&quot;,&quot;Deployment of Asp projects&quot;],&quot;project&quot;:[{&quot;projectName&quot;:&quot;Car Rental&quot;,&quot;technology&quot;:[&quot;ASPC#&quot;]}]},{&quot;jobId&quot;:3,&quot;jobTitle&quot;:&quot;20CS801014 SOFTWARE Developer-Asp.Net&quot;,&quot;jobDescription&quot;:&quot;Giftson Daniel GMust know .Net Technologies&quot;,&quot;experience&quot;:[&quot;Exp.With Asp projects is nice to have&quot;,&quot;Deployment of Asp projects&quot;],&quot;project&quot;:[{&quot;projectName&quot;:&quot;Car Rental&quot;,&quot;technology&quot;:[&quot;ASPC#&quot;]}]}]
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref passed">7</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref passed">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">390</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.8">11:11:52.706 [print] [
+  {
+    &quot;jobId&quot;: 1,
+    &quot;jobTitle&quot;: &quot;Software Engg&quot;,
+    &quot;jobDescription&quot;: &quot;To develop andriod application&quot;,
+    &quot;experience&quot;: [
+      &quot;Google&quot;,
+      &quot;Apple&quot;,
+      &quot;Mobile Iron&quot;
+    ],
+    &quot;project&quot;: [
+      {
+        &quot;projectName&quot;: &quot;Movie App&quot;,
+        &quot;technology&quot;: [
+          &quot;Kotlin&quot;,
+          &quot;SQL Lite&quot;,
+          &quot;Gradle&quot;
+        ]
+      }
+    ]
+  },
+  {
+    &quot;jobId&quot;: 2,
+    &quot;jobTitle&quot;: &quot;Web Developer-Asp.Net&quot;,
+    &quot;jobDescription&quot;: &quot;Giftson Daniel GMust know .Net Technologies&quot;,
+    &quot;experience&quot;: [
+      &quot;Exp.With Asp projects is nice to have&quot;,
+      &quot;Deployment of Asp projects&quot;
+    ],
+    &quot;project&quot;: [
+      {
+        &quot;projectName&quot;: &quot;Car Rental&quot;,
+        &quot;technology&quot;: [
+          &quot;ASPC#&quot;
+        ]
+      }
+    ]
+  },
+  {
+    &quot;jobId&quot;: 3,
+    &quot;jobTitle&quot;: &quot;20CS801014 SOFTWARE Developer-Asp.Net&quot;,
+    &quot;jobDescription&quot;: &quot;Giftson Daniel GMust know .Net Technologies&quot;,
+    &quot;experience&quot;: [
+      &quot;Exp.With Asp projects is nice to have&quot;,
+      &quot;Deployment of Asp projects&quot;
+    ],
+    &quot;project&quot;: [
+      {
+        &quot;projectName&quot;: &quot;Car Rental&quot;,
+        &quot;technology&quot;: [
+          &quot;ASPC#&quot;
+        ]
+      }
+    ]
+  },
+  {
+    &quot;jobId&quot;: 3,
+    &quot;jobTitle&quot;: &quot;20CS801014 SOFTWARE Developer-Asp.Net&quot;,
+    &quot;jobDescription&quot;: &quot;Giftson Daniel GMust know .Net Technologies&quot;,
+    &quot;experience&quot;: [
+      &quot;Exp.With Asp projects is nice to have&quot;,
+      &quot;Deployment of Asp projects&quot;
+    ],
+    &quot;project&quot;: [
+      {
+        &quot;projectName&quot;: &quot;Car Rental&quot;,
+        &quot;technology&quot;: [
+          &quot;ASPC#&quot;
+        ]
+      }
+    ]
+  }
+]
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
